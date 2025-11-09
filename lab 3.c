@@ -90,27 +90,27 @@ void sorting() {// using bubble sorting
 
 int main(){//main function
     int choice;// variable to store user choice as integer
-    printf("The following options are available:\n");
-    printf("Read in data[1]\n");
-    printf("Print Out the catalogue[2]\n");
-    printf("Save data to file[3]\n");
-    printf("Exit Program[4]\n");
-    printf("Enter choice Now:");
+    printf("The following options are available:\n");//start of menu display
+    printf("Read in data[1]\n");// menu option to read in data
+    printf("Print Out the catalogue[2]\n");// menu option to print out the catalogue
+    printf("Save data to file[3]\n");// menu option to save data to file
+    printf("Exit Program[4]\n");// menu option to exit program
+    printf("Enter choice Now:");// allow user to enter choice
     scanf("%d",&choice);// reads user choice from keyboard input
 
     switch(choice){// switch statement to handle user choice
-        case 1:
-        read_in_data();
+        case 1://when entered choice is 1
+        read_in_data();// calls function to read in data
         break;
-        case 2:
-        print_out_catologue_to_screen();
-        break; 
-        case 3:
-        save_data();
+        case 2:// when entered choice is 2
+        print_out_catologue_to_screen();// calls function to print out the catalogue
         break;
-        case 4:
-        exit(0);
-        printf("exiting program\n");
+        case 3:// when entered choice is 3
+        save_data();// calls function to save data
+        break;
+        case 4:// when entered choice is 4
+        exit(0);// exits the program when 4 is chosen
+        printf("exiting program\n");// display message when exiting program
         break;
         default:// default case for invalid choice
         printf("INVALID CHOICE TRY AGAIN");
